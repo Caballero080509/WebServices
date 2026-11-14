@@ -6,6 +6,10 @@ import os
 
 app = Flask(__name__)
 
+@app.route('/prueba')
+def prueba():
+    return "¡El backend de Flask está funcionando!"
+
 # Cargar modelo LiteRT
 print("Cargando modelo de IA...")
 
